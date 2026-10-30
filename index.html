@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academia Perfect Body | Personal trainer para mulheres em Barueri</title>
+<meta name="description" content="Treino com acompanhamento de personal trainer para mulheres no Vale do Sol, Barueri - SP. Nota 4,5 no Google. Chame no WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0e1112; --ink2:#1b2022; --orchid:#2fe0cf; --orchid-d:#17b3a4;
+  --blush:#f1f7f7; --sand:#e1efee; --text:#1a2022; --muted:#5b6769; --white:#fff;
+  --radius:18px; --orange:#f2682a; --orange-d:#c9460f;
+  --font-h:'Bricolage Grotesque',system-ui,sans-serif;
+  --font-b:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--font-b);color:var(--text);background:var(--blush);line-height:1.6;font-size:17px}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--orchid);outline-offset:3px}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+h1,h2,h3{font-family:var(--font-h);line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(1.9rem,4vw,3rem);font-weight:800}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:700;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:var(--font-b);transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn-main{background:var(--orchid);color:var(--ink)}
+.btn-main:hover{background:#5df0e2}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(14,17,18,.92);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:var(--font-h);font-weight:800;font-size:1.25rem;color:#fff}
+.logo span{color:var(--orchid)}
+.menu{display:flex;gap:1.6rem;align-items:center;color:#e9ddf2;font-size:.95rem}
+.menu a:hover{color:#fff}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+
+/* Hero */
+.hero{background:var(--ink);color:#fff;padding:5rem 0 4.5rem;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-12%;top:-30%;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(47,224,207,.32),transparent 68%)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:center;position:relative;z-index:1}
+.status{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,.1);padding:.4rem .9rem;border-radius:999px;font-size:.9rem;margin-bottom:1.4rem}
+.dot{width:10px;height:10px;border-radius:50%;background:#7ee2a0;box-shadow:0 0 0 0 rgba(126,226,160,.7);animation:pulse 2s infinite}
+.dot.off{background:#f08a8a;animation:none}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(126,226,160,0)}100%{box-shadow:0 0 0 0 rgba(126,226,160,0)}}
+.hero h1{font-size:clamp(2.5rem,6.6vw,5rem);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--orchid)}
+.card.hl .ico{color:var(--orange)}
+.hero p.lead{margin:1.4rem 0 2rem;font-size:1.15rem;color:#d9cbe6;max-width:34rem}
+.cta-row{display:flex;gap:.9rem;flex-wrap:wrap}
+.score{background:var(--ink2);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:1.8rem}
+.score .big{font-family:var(--font-h);font-size:4.2rem;font-weight:800;line-height:1}
+.stars{color:var(--orange);letter-spacing:.15em;font-size:1.2rem;margin:.3rem 0}
+.score small{color:#bfb0cf}
+.score ul{list-style:none;margin-top:1.2rem;display:grid;gap:.6rem;font-size:.97rem}
+.score li::before{content:"✓";color:var(--orchid);font-weight:700;margin-right:.55rem}
+
+/* Sections */
+section{padding:5rem 0}
+.sec-head{max-width:40rem;margin-bottom:2.8rem}
+.sec-head p{color:var(--muted);margin-top:.9rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.card{background:var(--white);border-radius:var(--radius);padding:1.8rem;border:1px solid #d3e5e4}
+.card h3{font-size:1.3rem;margin:.9rem 0 .5rem}
+.card p{color:var(--muted);font-size:.98rem}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--sand);display:grid;place-items:center;font-size:1.4rem}
+.card.hl{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card.hl p{color:#d3c5e0}
+.card.hl .ico{background:var(--ink2)}
+
+/* Steps */
+.steps{background:var(--sand)}
+.steps ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;counter-reset:s}
+.steps li{counter-increment:s;background:var(--white);padding:1.8rem;border-radius:var(--radius)}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--orchid);color:var(--ink);font-weight:800;font-family:var(--font-h);margin-bottom:1rem}
+.steps h3{font-size:1.25rem;margin-bottom:.4rem}
+.steps p{color:var(--muted);font-size:.98rem}
+
+/* Reviews */
+.quote{background:var(--white);border-radius:var(--radius);padding:1.8rem;border:1px solid #d3e5e4;display:flex;flex-direction:column;gap:1rem}
+.quote p{font-family:var(--font-h);font-size:1.2rem;font-weight:500;line-height:1.35}
+.quote span{color:var(--muted);font-size:.9rem;margin-top:auto}
+.rev-link{display:inline-block;margin-top:1.6rem;font-weight:700;color:var(--orange-d);border-bottom:2px solid currentColor}
+
+/* Location */
+.loc{background:var(--ink);color:#fff}
+.loc .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:2.5rem;align-items:stretch}
+.loc dl{display:grid;gap:1.2rem;margin:1.8rem 0}
+.loc dt{color:#bfb0cf;font-size:.88rem}
+.loc dd{font-size:1.08rem;font-weight:500}
+.map{border-radius:var(--radius);overflow:hidden;min-height:340px;background:var(--ink2)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0}
+
+/* Form */
+.lead-box{background:var(--white);border-radius:24px;padding:2.6rem;display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border:1px solid #d3e5e4}
+form{display:grid;gap:.9rem}
+label{font-size:.9rem;font-weight:700}
+input,select{width:100%;padding:.85rem 1rem;border-radius:12px;border:1.5px solid #c9dcdb;font:inherit;background:#fff;margin-top:.3rem}
+input:focus,select:focus{border-color:var(--orchid);outline:none}
+.hint{font-size:.85rem;color:var(--muted)}
+
+/* FAQ */
+details{background:var(--white);border-radius:14px;padding:1.2rem 1.4rem;border:1px solid #d3e5e4;margin-bottom:.8rem}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+summary::after{content:"+";color:var(--orange-d);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:.8rem;color:var(--muted)}
+
+footer{background:var(--ink);color:#bfb0cf;padding:2.4rem 0;font-size:.92rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+
+/* Entrada do hero (único movimento de página) */
+.hero .wrap>*{animation:rise .7s both}
+.hero .wrap>*:nth-child(2){animation-delay:.15s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+@media(max-width:860px){
+  .menu{display:none;position:absolute;top:68px;left:0;right:0;background:var(--ink);flex-direction:column;padding:1.4rem;gap:1.1rem}
+  .menu.open{display:flex}
+  .burger{display:block}
+  .hero .wrap,.loc .wrap,.lead-box{grid-template-columns:1fr}
+  .grid3,.steps ol{grid-template-columns:1fr}
+  section{padding:3.6rem 0}
+  .lead-box{padding:1.6rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#topo" class="logo">Perfect<span>Body</span></a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="menu" id="menu">
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#local">Localização</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="btn btn-main" data-wa="Olá! Vim pelo site e quero conhecer a Academia Perfect Body." href="#">Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="status"><span class="dot" id="dot"></span><span id="statusTxt">Verificando horário…</span></div>
+      <h1>Treino com acompanhamento, feito para <em>mulheres</em>.</h1>
+      <p class="lead">Na Academia Perfect Body você treina com personal trainer, aparelhos completos e um ambiente que incentiva você a voltar. No Vale do Sol, em Barueri.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" data-wa="Olá! Quero agendar uma aula experimental na Academia Perfect Body." href="#">Agendar aula experimental</a>
+        <a class="btn btn-ghost" href="#local">Ver como chegar</a>
+      </div>
+    </div>
+    <aside class="score" aria-label="Avaliação no Google">
+      <div class="big">4,5</div>
+      <div class="stars" aria-hidden="true">★★★★★</div>
+      <small>75 avaliações no Google</small>
+      <ul>
+        <li>Personal trainer para mulheres</li>
+        <li>Academia completa, com todos os aparelhos</li>
+        <li>Aberta até as 23h</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="diferenciais">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Por que as alunas ficam na Perfect Body</h2>
+      <p>Resultado vem de constância. Por isso cuidamos do treino, do ambiente e da sua rotina.</p>
+    </div>
+    <div class="grid3">
+      <article class="card hl"><div class="ico">🏋️‍♀️</div><h3>Personal trainer</h3><p>Treino orientado por profissional, com atenção à sua técnica, ao seu objetivo e ao seu ritmo.</p></article>
+      <article class="card"><div class="ico">🧩</div><h3>Estrutura completa</h3><p>Aparelhos para treinar o corpo todo, de musculação a funcional, sem precisar de outra academia.</p></article>
+      <article class="card"><div class="ico">💜</div><h3>Ambiente que motiva</h3><p>Clima alto astral e pessoas que incentivam você a ir treinar, mesmo nos dias difíceis.</p></article>
+      <article class="card"><div class="ico">🕙</div><h3>Horário até 23h</h3><p>Treine de manhã, no almoço ou à noite. Escolha o horário que cabe na sua rotina.</p></article>
+      <article class="card"><div class="ico">📍</div><h3>Perto de você</h3><p>Fácil de chegar para quem mora ou trabalha no Vale do Sol e arredores, em Barueri.</p></article>
+      <article class="card"><div class="ico">💬</div><h3>Atendimento no WhatsApp</h3><p>Tire dúvidas, veja planos e agende sua visita pelo WhatsApp, sem fila e sem burocracia.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="steps" id="como-funciona">
+  <div class="wrap">
+    <div class="sec-head"><h2>Comece em 3 passos</h2></div>
+    <ol>
+      <li><h3>Chame no WhatsApp</h3><p>Conte seu objetivo e o melhor horário para você.</p></li>
+      <li><h3>Conheça a academia</h3><p>Visite o espaço, veja os aparelhos e converse com a equipe.</p></li>
+      <li><h3>Treine com orientação</h3><p>Receba um treino pensado para você e acompanhe sua evolução.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="avaliacoes">
+  <div class="wrap">
+    <div class="sec-head"><h2>O que as alunas dizem no Google</h2><p>Nota 4,5 em 75 avaliações.</p></div>
+    <div class="grid3">
+      <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“Já fui em outras academias da região, porém só consigo ter resultados nesta!”</p><span>Avaliação no Google</span></figure>
+      <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“Academia muito boa, com todos os aparelhos, academia completa.”</p><span>Avaliação no Google</span></figure>
+      <figure class="quote"><div class="stars" aria-hidden="true">★★★★★</div><p>“Clima é alto astral e as pessoas são incríveis, me incentivam a ir treinar.”</p><span>Avaliação no Google</span></figure>
+    </div>
+    <a class="rev-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Academia+Perfect+Body+R.+Mississipi+75+Barueri">Ver todas as avaliações no Google Maps</a>
+  </div>
+</section>
+
+<section class="loc" id="local">
+  <div class="wrap">
+    <div>
+      <h2>Venha conhecer</h2>
+      <dl>
+        <div><dt>Endereço</dt><dd>R. Mississipi, 75 – Vale do Sol<br>Barueri – SP, 06437-100</dd></div>
+        <div><dt>Horário</dt><dd>Aberta até as 23h</dd></div>
+        <div><dt>WhatsApp e telefone</dt><dd>(11) 91079-2092</dd></div>
+      </dl>
+      <div class="cta-row">
+        <a class="btn btn-main" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=R.+Mississipi,+75+-+Vale+do+Sol,+Barueri+-+SP,+06437-100">Traçar rota</a>
+        <a class="btn btn-ghost" href="tel:+5511910792092">Ligar agora</a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Mapa da Academia Perfect Body" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=R.+Mississipi,+75+-+Vale+do+Sol,+Barueri+-+SP,+06437-100&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="lead-box">
+      <div>
+        <h2>Agende sua visita</h2>
+        <p style="color:var(--muted);margin-top:.9rem">Preencha e enviamos você direto para o WhatsApp da academia com a mensagem pronta.</p>
+      </div>
+      <form id="leadForm">
+        <label>Seu nome<input type="text" id="nome" required autocomplete="name" placeholder="Maria Silva"></label>
+        <label>Seu objetivo
+          <select id="obj">
+            <option>Emagrecer</option><option>Ganhar massa</option><option>Condicionamento</option><option>Saúde e bem-estar</option>
+          </select>
+        </label>
+        <label>Melhor horário
+          <select id="hor"><option>Manhã</option><option>Tarde</option><option>Noite</option></select>
+        </label>
+        <button class="btn btn-main" type="submit">Enviar pelo WhatsApp</button>
+        <p class="hint">Você será redirecionada ao WhatsApp. Nenhum dado fica salvo neste site.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:1rem">
+  <div class="wrap" style="max-width:780px">
+    <h2 style="margin-bottom:1.8rem">Dúvidas frequentes</h2>
+    <details><summary>A academia é só para mulheres?</summary><p>Nosso foco é o acompanhamento de personal trainer para mulheres. Chame no WhatsApp para confirmar as condições atuais.</p></details>
+    <details><summary>Quais são os planos e valores?</summary><p>Os valores podem mudar. Chame no WhatsApp para receber os planos atualizados.</p></details>
+    <details><summary>Posso conhecer antes de matricular?</summary><p>Pode. Agende uma visita ou aula experimental pelo WhatsApp.</p></details>
+    <details><summary>Qual o horário de funcionamento?</summary><p>A academia fecha às 23h. Confirme os horários de cada dia no WhatsApp.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="ano"></span> Academia Perfect Body Ltda</div>
+    <div>R. Mississipi, 75 – Vale do Sol, Barueri – SP · (11) 91079-2092</div>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="Olá! Quero saber mais sobre a Academia Perfect Body." href="#" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-2c1.8 1 3.800 1.500 5.600 1.500 7 0 12.600-5.600 12.600-12.500S23 3 16 3zm0 22.900c-1.800 0-3.500-.5-5-1.400l-.4-.2-4.400 1.200 1.200-4.300-.3-.4a10.300 10.300 0 0 1-1.600-5.500C5.500 9.700 10.200 5.100 16 5.100s10.500 4.600 10.500 10.400S21.800 25.900 16 25.900zm5.700-7.700c-.3-.2-1.800-.9-2.100-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7.100a8.400 8.400 0 0 1-4.200-3.700c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400s-1 1-1 2.500 1.100 2.900 1.200 3.100c.2.200 2.100 3.300 5.200 4.600 1.900.8 2.700.9 3.600.7.600-.1 1.800-.8 2.100-1.500s.3-1.300.2-1.500-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+(function(){
+  var NUM = "5511910792092";
+  function wa(msg){ return "https://wa.me/" + NUM + "?text=" + encodeURIComponent(msg); }
+
+  // Links de WhatsApp
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = wa(a.getAttribute("data-wa"));
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // Menu mobile
+  var burger = document.getElementById("burger"), menu = document.getElementById("menu");
+  burger.addEventListener("click", function(){
+    var open = menu.classList.toggle("open");
+    burger.setAttribute("aria-expanded", open);
+  });
+  menu.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ menu.classList.remove("open"); }); });
+
+  // Status aberto/fechado (fecha às 23h, horário de Brasília)
+  function status(){
+    var h = parseInt(new Intl.DateTimeFormat("pt-BR",{hour:"numeric",hour12:false,timeZone:"America/Sao_Paulo"}).format(new Date()),10);
+    var aberto = h >= 6 && h < 23;
+    document.getElementById("dot").classList.toggle("off", !aberto);
+    document.getElementById("statusTxt").textContent = aberto ? "Aberta agora · fecha às 23h" : "Fechada agora · confira o horário no WhatsApp";
+  }
+  status();
+
+  // Formulário -> WhatsApp
+  document.getElementById("leadForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var n = document.getElementById("nome").value.trim();
+    var o = document.getElementById("obj").value;
+    var h = document.getElementById("hor").value;
+    var msg = "Olá! Meu nome é " + n + ". Meu objetivo é: " + o + ". Prefiro treinar de " + h.toLowerCase() + ". Quero conhecer a Academia Perfect Body.";
+    window.open(wa(msg), "_blank", "noopener");
+  });
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
